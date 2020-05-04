@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <title>Skaičiuotuvas</title>
+
+</head>
+
+<body>
+<div id="waves">
+  <div class="calculator-grid">
+    <div class="output">
+      <div data-previous-operand class="previous-operand"></div>
+      <div data-current-operand class="current-operand"></div>
+    </div>
+    <button data-all-clear id="clear" class="span-two">C</button>
+    <button data-delete>CE</button>
+    <button data-operation>÷</button>
+    <button data-operation>sin</button>
+    <button data-operation>cos</button>
+    <button data-operation>tan</button>
+    <button data-operation>*</button>
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>+</button>
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>-</button>
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>xⁿ</button>
+    <button data-number>0</button>
+    <button data-number>.</button>
+    <button data-equals id="equals" class="span-two">=</button>
+  </div>
+  </div>
+
+<script src="js/script.js"></script>
+<script src="js/three.r95.min.js"></script>
+<script src="js/vanta.waves.min.js"></script>
+<script>
+  VANTA.WAVES({
+    el: "#waves",
+    mouseControls: true,
+    touchControls: true,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    scaleMobile: 1.00,
+    color: 0x62639,
+    waveSpeed: 0.75,
+    zoom: 0.97
+  })
+</script>
+</body>
+</html>
+
